@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 BASE_DIR = Path(__file__).resolve().parent
-KB_PATH = BASE_DIR / "knowledge_base.csv"
+KB_PATH = BASE_DIR.parent / "knowledge_base.csv"
 TEST_PATH = BASE_DIR / "test_queries.csv"
 RESULTS_PATH = BASE_DIR / "test_results.csv"
 SUMMARY_PATH = BASE_DIR / "test_summary.txt"
